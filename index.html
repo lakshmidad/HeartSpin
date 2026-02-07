@@ -1,62 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeartSpin - A Romantic Confession</title>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Import Map for Three.js -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Confession</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="experience-container">
-        <canvas id="canvas-3d"></canvas>
-
-        <!-- UI Overlay -->
-        <div id="ui-layer">
-
-            <!-- Landing / Create Mode (Hidden) -->
-            <div id="create-confession" class="ui-panel hidden">
-                <!-- Kept structure if needed later, but hidden -->
-                <input type="hidden" id="confession-text">
-                <input type="hidden" id="sender-name">
-                <input type="hidden" id="generated-url">
-                <button id="btn-generate" style="display:none"></button>
-                <button id="btn-copy" style="display:none"></button>
-                <button id="btn-preview" style="display:none"></button>
-                <button id="btn-create-new" style="display:none"></button>
-            </div>
-
-            <!-- Controls -->
-            <div id="controls">
-                <button id="btn-music" class="control-btn" aria-label="Toggle Music">
-                    <span class="icon">🎵</span>
-                </button>
-            </div>
-
-            <!-- Music Audio -->
-            <audio id="bg-music" loop>
-                <source
-                    src="https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939f792cb.mp3?filename=romantic-piano-126442.mp3"
-                    type="audio/mp3">
-            </audio>
-
-        </div>
-    </div>
-
-    <script type="module" src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

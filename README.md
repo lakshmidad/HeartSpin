@@ -1,37 +1,16 @@
-# HeartSpin - 3D Love Confession
+# React + Vite
 
-An interactive 3D web experience to share personalized romantic messages.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- 💖 **Interactive 3D Heart:** A beautiful, rotating heart that responds to touch.
-- 💌 **Secret Messages:** Create and share encoded confession links.
-- 🎵 **Atmospheric Audio:** Toggleable romantic background music.
-- ✨ **Particle Effects:** Floating heart particles for a magical feel.
+Currently, two official plugins are available:
 
-## How to Run
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-1. **Open the Folder:** Navigate to the folder where you saved the files.
-2. **Start a Local Server:**
-   You need a local server to run this because of browser security policies regarding ES modules and textures.
-   
-   If you have Python installed (which you likely do):
-   ```bash
-   python -m http.server 8000
-   ```
-   
-   If you have Node.js:
-   ```bash
-   npx serve .
-   ```
+## React Compiler
 
-3. **Open in Browser:**
-   Go to `http://localhost:8000` in your web browser.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-4. **Create & Share:**
-   - Type your message and name.
-   - Click "Create Magic Link".
-   - Copy the link and send it to your special someone!
+## Expanding the ESLint configuration
 
-## Customization
-- **Music:** Replace the audio source in `index.html` with your own mp3 file.
-- **Colors:** Edit the CSS variables in `style.css` to change the theme.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
