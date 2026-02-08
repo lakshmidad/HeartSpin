@@ -114,7 +114,7 @@ function createHeartWithText() {
     loader.load('https://unpkg.com/three@0.160.0/examples/fonts/helvetiker_regular.typeface.json', function (font) {
 
         // Changed text and reduced size
-        const textGeo = new TextGeometry('Love you Poshika Akka', {
+        const textGeo = new TextGeometry('Love you Sahanashre Akka', {
             font: font,
             size: 1.5, // Smaller to fit "Poshika Akka"
             height: 0.5,

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'radial-gradient': 'radial-gradient(circle, #5e0222 0%, #000000 100%)',
+        'radial-gradient': 'radial-gradient(circle at center, #1a0a0d 0%, #2d0f1a 40%, #0a0000 100%)',
       },
       fontFamily: {
         'dancing': ['"Dancing Script"', 'cursive'],
