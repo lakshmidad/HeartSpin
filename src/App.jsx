@@ -7,6 +7,7 @@ import Heart from './components/Heart';
 import Particles from './components/Particles';
 import Explosion from './components/Explosion';
 import Overlay from './components/Overlay';
+import Message3D from './components/Message3D';
 
 function TestBox() {
   return (
@@ -20,6 +21,7 @@ function TestBox() {
 function App() {
   const [explode, setExplode] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [message, setMessage] = useState('I love you');
 
   const handleYes = () => {
     setExplode(true);
@@ -64,12 +66,14 @@ function App() {
 
         <Suspense fallback={null}>
           <TestBox />
+          {/* Show 3D message near heart */}
+          <Message3D text={message} position={[0, -2.5, 4]} />
         </Suspense>
 
         <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
       </Canvas>
 
-      <Overlay onYes={handleYes} isSuccess={isSuccess} />
+      <Overlay onYes={handleYes} isSuccess={isSuccess} message={message} setMessage={setMessage} />
     </div>
   );
 }
